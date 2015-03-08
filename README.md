@@ -16,3 +16,25 @@ to as I want them.
 * providing login area and member creation for members
 * set up task lists so that tasks can
 be shared with other members. 
+
+
+
+
+
+
+
+
+####################################################
+#TOC START
+####################################################
+* [](.//README.md)
+    * [.gitignore](./.gitignore)
+    * [connection.php](./connection.php)
+    * [README.md](./README.md)
+    * [functions.php](./functions.php)
+    * [htmlElements.php](./htmlElements.php)
+    * [index.php](./index.php)
+    * [handyfunctions.php](./handyfunctions.php)
+    * [style.css](./style.css)
+    * [sftp-config.json](./sftp-config.json)
+    * [.git](./.git)
