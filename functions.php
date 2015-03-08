@@ -4,7 +4,7 @@ session_start();
  * @Author: Jeremiah Marks
  * @Date:   2015-02-16 17:58:39
  * @Last Modified by:   Jeremiah Marks
- * @Last Modified time: 2015-03-07 21:43:08
+ * @Last Modified time: 2015-03-07 22:07:48
  */
 
 /**
@@ -116,7 +116,6 @@ include_once 'htmlElements.php';
 
   function tagPage(){
     global $conn;
-    echo "I was called!";
     $res = getAllTags('tags', $conn);
     echo pp($res);
   }
@@ -125,15 +124,20 @@ include_once 'htmlElements.php';
     htmlHead();
     bodyStart();
     $currentTasks = get_all_tasks();
+    echo "<div class='taskList'><h1>TASK LIST</h1>";
     echo pp($currentTasks);
-    tagPage();
+    echo "</div>";
+    //tagPage();
     taskAddForm();
+    tagAddForm();
     bodyEnd();
   }
 
   function argument_parser(){
     if (isset($_POST['newTask'])){
       add_task($_POST['name']);
+    } elseif (isset($_POST['newTag'])) {
+      addNewTag($_POST['name']);
     }
     main_page();
   }

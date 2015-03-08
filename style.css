@@ -2,7 +2,7 @@
 * @Author: Jeremiah Marks
 * @Date:   2015-03-07 20:12:27
 * @Last Modified by:   Jeremiah Marks
-* @Last Modified time: 2015-03-07 20:32:10
+* @Last Modified time: 2015-03-07 22:08:19
 */
 
 /* =Reset
@@ -35,35 +35,8 @@ html {
 body {
     background: #fff;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-    display: block;
-}
 ol, ul {
     list-style: none;
-}
-table { /* tables still need 'cellspacing="0"' in the markup */
-    border-collapse: separate;
-    border-spacing: 0;
-}
-caption, th, td {
-    font-weight: normal;
-    text-align: left;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: "";
-}
-blockquote, q {
-    quotes: "" "";
 }
 a:focus {
     outline: thin dotted;
@@ -1025,11 +998,24 @@ td#next {
 }
 .cell{
     display: table-cell;
-    width:200px;
+    /*width:200px;*/
 }
 ul{
     display: table;
 }
 li{
     display: table-row;
+}
+
+.newTask{
+    width: 25%;
+    float:left;
+}
+.newTag{
+    float: right;
+    width: 25%;
+}
+.taskList{
+    float:left;
+    width:50%;
 }

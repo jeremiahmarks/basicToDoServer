@@ -3,7 +3,7 @@
  * @Author: Jeremiah Marks
  * @Date:   2015-03-07 19:28:55
  * @Last Modified by:   Jeremiah Marks
- * @Last Modified time: 2015-03-07 19:53:44
+ * @Last Modified time: 2015-03-07 22:00:49
  */
 
 function htmlHead(){
@@ -39,16 +39,42 @@ function bodyEnd(){
 
 function taskAddForm(){
     ?>
-    <form method='post' action=''>
-        <table class='newproject'>
-          <tr>
-            <td>Task Name</td>
-            <td><input type='text' name='name'></td>
-          </tr>
-          <tr>
-            <td colspan="2"><input type="submit" name="newTask"></td>
-          </tr>
-        </table>
-    </form>
+    <div class="newTask">
+        <form method='post' action=''>
+            <table class='newTaskTable'>
+                <tr>
+                    <td colspan="2"><h2>Add a Task!</h2></td>
+                </tr>
+              <tr>
+                <td>Task Name</td>
+                <td><input type='text' name='name'></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input type="submit" name="newTask" value="New Task"></td>
+              </tr>
+            </table>
+        </form>
+    </div>
+    <?php
+}
+
+function tagAddForm(){
+    ?>
+    <div class="newTag">
+        <form method='post' action=''>
+            <table class="newTagTable">
+                <tr>
+                    <td colspan="2"><h2>Add a tag!</h2></td>
+                </tr>
+                <tr>
+                    <td>Tag Name</td>
+                    <td><input type='text' name='name'></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="newTag" value="New Tag"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
     <?php
 }
