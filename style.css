@@ -2,7 +2,7 @@
 * @Author: Jeremiah Marks
 * @Date:   2015-03-07 20:12:27
 * @Last Modified by:   Jeremiah Marks
-* @Last Modified time: 2015-03-07 20:32:10
+* @Last Modified time: 2015-03-08 10:59:23
 */
 
 /* =Reset
@@ -35,35 +35,8 @@ html {
 body {
     background: #fff;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-    display: block;
-}
 ol, ul {
     list-style: none;
-}
-table { /* tables still need 'cellspacing="0"' in the markup */
-    border-collapse: separate;
-    border-spacing: 0;
-}
-caption, th, td {
-    font-weight: normal;
-    text-align: left;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: "";
-}
-blockquote, q {
-    quotes: "" "";
 }
 a:focus {
     outline: thin dotted;
@@ -97,7 +70,7 @@ textarea {
 h1,h2,h3,h4,h5,h6 {
     clear: both;
     font-weight: bold;
-    margin: 1.5em 0;
+    /*margin: 1.5em 0;*/
 }
 h1 {
     font-size: 24px;
@@ -1025,11 +998,158 @@ td#next {
 }
 .cell{
     display: table-cell;
-    width:200px;
+    /*width:200px;*/
 }
 ul{
     display: table;
 }
 li{
     display: table-row;
+}
+
+.newTask{
+    width: 25%;
+    float:left;
+}
+.newTag{
+    float: right;
+    width: 25%;
+}
+.taskList{
+    /*float:left;*/
+    width:100%;
+}
+
+.taglist{
+    width: 100%;
+}
+
+.taskid{
+    width:3%;
+    border: 1px solid black;
+}
+.taskName{
+    width: 40%;
+    border: 1px solid black;
+}
+.tagid{
+    display: table-cell;
+    width: 100px;
+    border: 1px solid black;
+}
+.tagname{
+    display: table-cell;
+    width: 100%;
+    border: 1px solid black;
+}
+.tagApplied{
+    float: left;
+    width: 150px;
+    margin: 1px 2px 3px 4px;
+    border: 3px solid black;
+}
+.taskListing{
+    border: 3px solid black;
+}
+.nolist{
+    display: block;
+    border: 1px solid black;
+}
+.tagRecord{
+    width: 100%;
+}
+.allTasks{
+    width: 100%;
+    margin: 0px 4px 0px 4px;
+}
+.looklikex{
+
+}
+.markComplete{
+    width:50px;
+    border:1px solid black;
+}
+.removeTag{
+    border:1px solid black;
+}
+.projectid{
+    display: table-cell;
+    width: 100px;
+    border: 1px solid #999;
+}
+.projectName {
+    display: table-cell;
+    width: 300px;
+    border: 1px solid #999;
+}
+
+.projectDescp {
+    display: table-cell;
+    border: 1px solid #999;
+    width: 300px;
+}
+.projectHolder{
+    width: 52%;
+    position:relative;
+    background-color: #222;
+    float: left;
+    display: table-column;
+    height: 100%;
+}
+.tagHolder{
+    width: 52%;
+    position:relative;
+    background-color: #222;
+    float: left;
+    display: table-column;
+    height: 100%;
+}
+.partOfProject{
+    float: left;
+    width: 150px;
+    margin: 1px 2px 3px 4px;
+    border: 3px solid #000;
+}
+.tagPicker{
+    display: table;
+    /*clear: both;*/
+    width: 45%;
+    height: 100%;
+    position:relative;
+    background-color: #222;
+    float: left;
+}
+.projectPicker{
+    display: table;
+    /*clear: both;*/
+    width: 45%;
+    height: 100%;
+    position:relative;
+    background-color: #222;
+    float: left;
+}
+.editTask{
+    margin: 35px 35px 35px 35px;
+}
+.tagArea{
+    width:100%;
+    height: 200px;
+    background-color: #156829;
+}
+.projectArea{
+    width:100%;
+    height: 200px;
+    background-color: #440108;
+    margin: 40px 0px 0px 0px;
+}
+.projectList{
+    width: 100%;
+}
+.tasknameInput{
+    width: 100%;
+}
+.compMover{
+    position: relative;
+    left: 50%;
+    bottom: -20px;
 }
